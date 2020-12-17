@@ -27,9 +27,13 @@ nav {
 }
 
 /*(0,0,1)*/
-main, article { 
+main{ 
     grid-area: b; 
     min-width: 12em;     
+}
+
+label, input {
+    display: block;
 }
 
 /*(0,0,1)*/
