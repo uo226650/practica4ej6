@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0081)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/vaciarTabla.html -->
+<!-- saved from url=(0083)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/eliminarDatos.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>BaseDatos ::Importar datos</title>
+    <title>BaseDatos ::Eliminar Datos</title>
     
     <meta name="author" content="Rocío Cenador Martínez">
     <link href="Ejercicio6.css" rel="stylesheet">
@@ -25,9 +25,11 @@
         <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/exportarDatos.html">Exportar datos a un archivo csv</a>
     </nav>
     <main>
-        <p>Elimina todos los registros de 'pruebasUsabilidad'</p>
+        <h2>Eliminar Datos</h2>
+        <p>Introduce el número de ID que identifica el registro que deseas eliminar</p>
         <form method="post" action="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/Ejercicio6.php">
-            <input type="submit" value="Vaciar tabla" name="vaciar">
+            <label for="id">ID:</label> <input type="text" name="id"> 
+            <input type="submit" value="Eliminar" name="eliminar">
         </form>
     </main>
 
