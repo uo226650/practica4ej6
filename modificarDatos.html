@@ -31,22 +31,22 @@
         <p>Formulario para modificar datos en la tabla "PruebasUsabilidad" que pertenece a la base de datos "BaseDatos"
         </p>
         <form method="post" action="Ejercicio6.php" id="inserta" name="inserta">
-            <p>ID:<input type="text" name="id" /> </p>
-            <p>DNI:<input type="text" name="dni" /> </p>
-            <p>Nombre: <input type="text" name="nombre" /> </p>
-            <p>Apellidos: <input type="text" name="apellidos" /></p>
-            <p>email:<input type="text" name="email" /> </p>
-            <p>Teléfono: <input type="number" name="telefono" min="0" /> </p>
-            <p>Edad: <input type="number" name="edad" min="0" /></p>
-            <p>Sexo: ('H'|'M')<input type="text" name="sexo" /> </p>
-            <p>Pericia: <input type="range" name="pericia" min="0" max="10" step="1" /> </p>
-            <p>Tiempo: <input type="number" name="tiempo" min="0" /></p>
-            <p>Resultado: (1:True, 0:False)<input type="number" name="aprobado" min="0" max="1" /> </p>
-            <p>Comentarios: <textarea name="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea></p>
-            <p>Mejoras: <textarea name="mejoras" placeholder="Introduce aquí tus sugerencias de mejora..."></textarea>
-            </p>
-            <p>Valoración:<input type="range" name="valoracion" min="0" max="10" step="1" /> </p>
-            <input type="submit" value="Insertar Datos" name="modificar" />
+            <label for="id">ID:</label><input type="text" id="id" name="id" /> </p>
+            <label for="dni">DNI:</label><input type="text" id="dni" name="dni" /> 
+            <label for="nombre">Nombre: </label><input type="text" id="nombre"  name="nombre" /> 
+            <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos"  name="apellidos" />
+            <label for="email">email:</label><input type="text" id="email"  name="email" /> 
+            <label for="telefono">Teléfono:</label> <input type="number" id="telefono"  name="telefono" min="0" /> 
+            <label for="edad">Edad: </label><input type="number" id="edad"  name="edad" min="0" />
+            <label for="sexo">Sexo: ('H'|'M')</label><input type="text" id="sexo"  name="sexo" /> 
+            <label for="pericia">Pericia: </label><input type="range" id="pericia"  name="pericia" min="0" max="10" step="1" /> 
+            <label for="tiempo">Tiempo: </label><input type="number" id="tiempo"  name="tiempo" min="0" />
+            <label for="aprobado">Resultado: (1:True, 0:False)</label><input type="number" id="aprobado"  name="aprobado" min="0" max="1" /> 
+            <label for="comentario">Comentarios: </label><textarea  id="comentario" name="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea>
+            <label for="mejoras">Mejoras:</label> <textarea  id="mejoras" name="mejoras" placeholder="Introduce aquí tus sugerencias de mejora..."></textarea>
+            
+            <label for="valoracion">Valoración:<input type="range" name="valoracion" min="0" max="10" step="1" /> 
+            <input type="submit" value="Insertar Datos" name="submitInserta" />
         </form>
     </main>
 </body>
