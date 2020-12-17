@@ -1,0 +1,97 @@
+
+/*(0,0,1)*/
+body { 
+    display: grid;
+    grid: "h h"
+          "a b"
+          "f f";
+}
+
+/*(0,0,2)*/
+body > header { /*Pueden otros headers, como los contenidos en un article */
+    grid-area: h;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+h1{
+    margin: 1em;
+}
+/*(0,0,1)*/
+nav { 
+    grid-area: a; 
+    display: flex;
+    flex-direction: column; 
+    padding: 1.8em;
+}
+
+/*(0,0,1)*/
+main, article { 
+    grid-area: b; 
+    min-width: 12em;     
+}
+
+/*(0,0,1)*/
+footer{ 
+    grid-area: f;  
+    display: flex;
+    justify-content: center;
+}
+
+
+/************* BODY Y ESTRUCTURA +++++++++++++*/
+
+/*(0,0,1)*/
+body {
+    font-family: "Futura Medium", "Gill Sans", "Verdana", sans-serif;
+    font-size: 20pt;
+    color: black;
+    background-color: rgb(240, 241, 241);
+    margin: 0;
+}
+
+/*(0,0,1)*/
+header, footer {
+    background-color: black;
+    color: rgba(185,188,188,1);
+    margin: 0;
+}
+
+
+
+/************* MENU NAVEGACIÓN +++++++++++++*/
+
+
+/************* ENLACES +++++++++++++*/
+
+ /*(0,0,1)*/
+a {
+    text-decoration: none; /* Eliminar el subrayado de los links */
+    padding: 0.5em;
+}
+/*(0,1,1)*/
+a:link { color: rgb(75, 73, 73);}
+a:visited { color: rgb(75, 73, 73); }
+a:hover {color: black;}
+a:active { color: orange; }
+
+/**************************** MAIN *******************************/
+
+/*(0,0,1)*/
+main {
+    
+    padding: 3em;
+}
+
+
+/************* PÁRRAFOS +++++++++++++*/
+
+
+/*(0,0,1)*/
+p { font-size: 0.7em;
+    text-align: left;
+}
+
+
+

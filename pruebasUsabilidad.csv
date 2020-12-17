@@ -1,0 +1,5 @@
+id; nombre; apellidos; dni; email; telefono; edad; sexo; pericia; tiempo; aprobado; comentarios; mejoras; valoracion 
+6;Manuel;Fernández;46375829;manu@fernandez.es;4294967295;56;H;8;1200;1;Todas las pruebas pasadas con éxito;Corregir las advertencias de color de fondo;6
+7;Sara;Martinez Carbajo;123456789;saramar@hotmail.com;123456789;32;M;2;2000;0;Detalles en el informe de TAW;;3
+8;Pilar;Rodríguez;589473648;prodriguez@gmail.com;4294967295;22;M;10;300;1;Todo correcto;Ninguna;10
+9;Raúl;López Pérez;71928374;lopez@uniovi.es;987654321;28;H;9;430;0;Fallo de adaptabilidad;;10
