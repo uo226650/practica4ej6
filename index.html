@@ -1,90 +1,51 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)http://localhost/PRACTICA-4/Ejercicio-6/Ejercicio6.php -->
+<!-- saved from url=(0083)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/insertarDatos.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>BaseDatos :: PruebasUsabilidad</title>
+    <title>BaseDatos ::Insertar Datos</title>
     
-    <meta name="author" content="Rocío Cenador Martínez"> 
+    <meta name="author" content="Rocío Cenador Martínez">
     <link href="Ejercicio6.css" rel="stylesheet">
-</head>   
+</head>
+
 <body>
     <header>
         <h1>Operaciones con bases de datos y MySQLi</h1>
-    </header>    
+    </header>
     <nav>
         <h2>Menú:</h2>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/crearBaseDatos.html">Crear base de datos</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/crearTabla.html">Crear tabla</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/insertarDatos.html">Insertar datos en la tabla</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/buscarDatos.html">Buscar datos en la tabla</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/modificarDatos.html">Modificar datos en la tabla</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/eliminarDatos.html">Eliminar datos de la tabla</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/generarInforme.html">Generar Informe</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/cargarDatos.html">Cargar datos desde archivo csv</a>
-        <a href="http://localhost/PRACTICA-4/Ejercicio-6/exportarDatos.html">Exportar datos a un archivo csv</a>
-    </nav>  
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/crearBaseDatos.html">Crear base de datos</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/crearTabla.html">Crear tabla</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/insertarDatos.html">Insertar datos en la tabla</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/buscarDatos.html">Buscar datos en la tabla</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/modificarDatos.html">Modificar datos en la tabla</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/eliminarDatos.html">Eliminar datos de la tabla</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/vaciarTabla.html">Vaciar tabla</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/generarInforme.html">Generar Informe</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/cargarDatos.html">Cargar datos desde archivo csv</a>
+        <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/exportarDatos.html">Exportar datos a un archivo csv</a>
+    </nav>
     <main>
-    <!--h2>Crear base de datos</h2>
-        <form action='#' method='post' id="bbdd" name='bbdd'>
-
-            <label for="nombreBaseDatos">Nombre para la base de datos:</label>
-            <input type="text" id="nombreBaseDatos" name="nombreBaseDatos" placeholder="Nombre" />
-            <input type='submit' value='Crear Base de Datos' name="submitBBDD"/>
-
-         </form> 
-        <h2>Crear tabla</h2>
-        <form action='#' method='post' id="tabla" name='tabla'>
-            <p>Paso 1: Proporciona el nombre de la base de datos en la que se creará la nueva tabla</p>
-            <label for="baseDatos">Base de datos:</label>
-            <input type="text" id="baseDatos" name="baseDatos" placeholder="Nombre base de datos" />
-            <p>Paso 2: Asigna un nombre a la nueva tabla</p>
-            <label for="nombreTabla">Nombre para la tabla:</label>
-            <input type="text" id="nombreTabla" name="nombreTabla" placeholder="Nombre de tabla" />
-            <input type='submit' value='Crear tabla' name="submitTabla"/>
-        
-         </form>
-
-        <h2>Insertar Datos</h2>  
-        <p>Formulario para insertar datos en la tabla "PruebasUsabilidad" que pertenece a la base de datos "BaseDatos"</p>
-        <form method="post" action="#" id="inserta" name="inserta">
-                <p>DNI:<input type="text" name="dni" /> </p>
-                <p>Nombre: <input type="text" name="nombre" /> </p>
-                <p>Apellidos: <input type="text" name="apellidos" /></p>
-                <p>email:<input type="text" name="email" /> </p>
-                <p>Teléfono: <input type="number" name="telefono" min="0" /> </p>
-                <p>Edad: <input type="number" name="edad" min="0" /></p>
-                <p>Sexo: ('H'|'M')<input type="text" name="sexo" /> </p>
-                <p>Pericia: <input type="range" name="pericia" min="0" max="10" step="1"/> </p>
-                <p>Tiempo: <input type="number" name="tiempo" min="0" /></p>
-                <p>Resultado: (1:True, 0:False)<input type="number" name="aprobado" min="0" max="1"/> </p>
-                <p>Comentarios: <input type="textarea" name="comentarios" /> </p>
-                <p>Mejoras: <input type="textarea" name="mejoras" /></p>
-                <p>Valoración:<input type="range" name="valoracion" min="0" max="10" step="1"/> </p>
-                <input type="submit" value="Insertar Datos" name="submitInserta"/>
+        <h2>Insertar Datos</h2>
+        <p>Formulario para insertar datos en la tabla "PruebasUsabilidad" que pertenece a la base de datos "BaseDatos"
+        </p>
+        <form method="post" action="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/Ejercicio6.php" id="inserta" name="inserta">
+            <p>DNI:<input type="text" name="dni"> </p>
+            <p>Nombre: <input type="text" name="nombre"> </p>
+            <p>Apellidos: <input type="text" name="apellidos"></p>
+            <p>email:<input type="text" name="email"> </p>
+            <p>Teléfono: <input type="number" name="telefono" min="0"> </p>
+            <p>Edad: <input type="number" name="edad" min="0"></p>
+            <p>Sexo: ('H'|'M')<input type="text" name="sexo"> </p>
+            <p>Pericia: <input type="range" name="pericia" min="0" max="10" step="1"> </p>
+            <p>Tiempo: <input type="number" name="tiempo" min="0"></p>
+            <p>Resultado: (1:True, 0:False)<input type="number" name="aprobado" min="0" max="1"> </p>
+            <p>Comentarios: <textarea name="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea></p>
+            <p>Mejoras: <textarea name="mejoras" placeholder="Introduce aquí tus sugerencias de mejora..."></textarea>
+            </p>
+            <p>Valoración:<input type="range" name="valoracion" min="0" max="10" step="1"> </p>
+            <input type="submit" value="Insertar Datos" name="submitInserta">
         </form>
-        <form method="post" action="#" id="calculos"> 
-            <input type="submit" value="Media de edad" name="mediaEdad"/>
-            <input type="submit" value="Porcentaje de sexos" name="porcentajeSexos"/>
-            <input type="submit" value="Nivel de pericia media" name="mediaPericia"/>
-            <input type="submit" value="Tiempo medio de tarea" name="mediaTiempo"/>
-            <input type="submit" value="Porcentaje de aprobados" name="porcentajeAprobados"/>
-            <input type="submit" value="Valoración media de los usuarios" name="mediaValoración"/>
-            <input type="submit" value="Exportar tabla a csv" name="exportar"/>
-            <input type="submit" value="Importar csv a tabla" name="importar"/>
-
-        </form>
-
-        <form method="post" action="#">
-                <p>DNI: <input type="text" name="dni" /> </p> 
-                <input type="submit" value="Buscar" name="buscar" />
-                <input type="submit" value="Eliminar" name="eliminar" />
-        </form-->
-
-
-        <h2>Datos exportados: </h2>id; nombre; apellidos; dni; email; telefono; edad; sexo; pericia; tiempo; aprobado; comentarios; mejoras; valoracion 
-21;Manuel;Fernández;46375829;manu@fernandez.es;4294967295;56;H;8;1200;1;Todas las pruebas pasadas con éxito;Corregir las advertencias de color de fondo;6
-22;Sara;Martinez Carbajo;123456789;saramar@hotmail.com;123456789;32;M;2;2000;0;Detalles en el informe de TAW;;3
-23;Pilar;Rodríguez;589473648;prodriguez@gmail.com;4294967295;22;M;10;300;1;Todo correcto;Ninguna;10
- 
     </main>
+
 
 </body></html>
