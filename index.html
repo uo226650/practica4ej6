@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0083)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/insertarDatos.html -->
+<!-- saved from url=(0080)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/crearTabla.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>BaseDatos ::Insertar Datos</title>
+    <title>BaseDatos ::Crear Tabla</title>
     
     <meta name="author" content="Rocío Cenador Martínez">
     <link href="Ejercicio6.css" rel="stylesheet">
@@ -25,24 +25,16 @@
         <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/exportarDatos.html">Exportar datos a un archivo csv</a>
     </nav>
     <main>
-        <h3>Insertar Datos</h3>
-        <p>Formulario para insertar datos en la tabla "PruebasUsabilidad" que pertenece a la base de datos "BaseDatos"
-        
-        </p><form method="post" action="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/Ejercicio6.php" id="inserta" name="inserta">
-            <label for="dni">DNI:</label><input type="text" id="dni" name="dni"> 
-            <label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre"> 
-            <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="apellidos">
-            <label for="email">email:</label><input type="text" id="email" name="email"> 
-            <label for="telefono">Teléfono:</label> <input type="number" id="telefono" name="telefono" min="0"> 
-            <label for="edad">Edad: </label><input type="number" id="edad" name="edad" min="0">
-            <label for="sexo">Sexo: ('H'|'M')</label><input type="text" id="sexo" name="sexo"> 
-            <label for="pericia">Pericia: </label><input type="range" id="pericia" name="pericia" min="0" max="10" step="1"> 
-            <label for="tiempo">Tiempo: </label><input type="number" id="tiempo" name="tiempo" min="0">
-            <label for="aprobado">Resultado: (1:True, 0:False)</label><input type="number" id="aprobado" name="aprobado" min="0" max="1"> 
-            <label for="comentario">Comentarios: </label><textarea id="comentario" name="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea>
-            <label for="mejoras">Mejoras:</label> <textarea id="mejoras" name="mejoras" placeholder="Introduce aquí tus sugerencias de mejora..."></textarea>
-            <label for="valoracion">Valoración:</label><input type="range" id="valoracion" name="valoracion" min="0" max="10" step="1"> 
-            <input type="submit" value="Insertar Datos" name="submitInserta">
+        <p>Crear la tabla 'pruebasUsabilidad'</p>
+        <form action="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/Ejercicio6.php" method="post" id="tabla" name="tabla">
+            <!--p>Paso 1: Proporciona el nombre de la base de datos en la que se creará la nueva tabla</p>
+            <label for="baseDatos">Base de datos:</label>
+            <input type="text" id="baseDatos" name="baseDatos" placeholder="Nombre base de datos" />
+            <p>Paso 2: Asigna un nombre a la nueva tabla</p>
+            <label for="nombreTabla">Nombre para la tabla:</label>
+            <input type="text" id="nombreTabla" name="nombreTabla" placeholder="Nombre de tabla" /-->
+            <input type="submit" value="Crear pruebasUsabilidad" name="submitTabla">
+
         </form>
     </main>
 
