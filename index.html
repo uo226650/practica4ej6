@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0080)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/crearTabla.html -->
+<!-- saved from url=(0081)https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/buscarDatos.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>BaseDatos ::Crear Tabla</title>
+    <title>BaseDatos ::Buscar Datos</title>
     
     <meta name="author" content="Rocío Cenador Martínez">
     <link href="Ejercicio6.css" rel="stylesheet">
@@ -25,18 +25,14 @@
         <a href="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/exportarDatos.html">Exportar datos a un archivo csv</a>
     </nav>
     <main>
-        <h3>Crear la tabla 'pruebasUsabilidad'</h3>
-        <form action="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/Ejercicio6.php" method="post" id="tabla" name="tabla">
-            <!--p>Paso 1: Proporciona el nombre de la base de datos en la que se creará la nueva tabla</p>
-            <label for="baseDatos">Base de datos:</label>
-            <input type="text" id="baseDatos" name="baseDatos" placeholder="Nombre base de datos" />
-            <p>Paso 2: Asigna un nombre a la nueva tabla</p>
-            <label for="nombreTabla">Nombre para la tabla:</label>
-            <input type="text" id="nombreTabla" name="nombreTabla" placeholder="Nombre de tabla" /-->
-            <input type="submit" value="Crear pruebasUsabilidad" name="submitTabla">
-
+        <h1>Consultar Datos</h1>
+        <p>Introduce el número de ID que identifica el registro que deseas consultar</p>
+        <form method="post" action="https://localhost:8443/UO226650-practica4/PRACTICA-4/Ejercicio-6/Ejercicio6.php">
+            <label for="id">ID:</label> <input type="text" id="id" name="id">
+            <input type="submit" value="Buscar" name="buscar">
         </form>
     </main>
+
 
 
 </body></html>
